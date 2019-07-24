@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/katrotz/atlas/issues"
   },
-  "homepage": "https://github.com/katrotz/atlas#readme"
+  "homepage": "https://github.com/katrotz/atlas#readme",
+  "devDependencies": {
+    "lerna": "^3.10.7"
+  }
 }
