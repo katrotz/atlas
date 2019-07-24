@@ -1,0 +1,25 @@
+{
+  "name": "atlas",
+  "version": "0.1.0",
+  "description": "The Berlin's celestial orb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katrotz/atlas.git"
+  },
+  "keywords": [
+    "berlin",
+    "online",
+    "services",
+    "map"
+  ],
+  "author": "Vyacheslav Cotruta <katrotz@gmail.com> (https://katrotz.space)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/katrotz/atlas/issues"
+  },
+  "homepage": "https://github.com/katrotz/atlas#readme"
+}
