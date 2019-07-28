@@ -4,25 +4,24 @@
   "description": "The Berlin's celestial orb",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lerna run test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/katrotz/atlas.git"
   },
   "keywords": [
-    "berlin",
-    "online",
-    "services",
-    "map"
+    "atlas",
+    "map",
+    "geoservices"
   ],
   "author": "Vyacheslav Cotruta <katrotz@gmail.com> (https://katrotz.space)",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/katrotz/atlas/issues"
   },
   "homepage": "https://github.com/katrotz/atlas#readme",
   "devDependencies": {
-    "lerna": "^3.10.7"
+    "lerna": "^3.16.4"
   }
 }

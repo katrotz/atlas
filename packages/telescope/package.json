@@ -1,0 +1,27 @@
+{
+  "name": "telescope",
+  "version": "0.1.0",
+  "description": "Atlas Front-End Application",
+  "keywords": [
+    "atlas",
+    "map",
+    "geoservices"
+  ],
+  "author": "Vyacheslav Cotruta <veaceslav.cotruta@webtrekk.com>",
+  "homepage": "https://github.com/katrotz/atlas/tree/master/packages/telescope#readme",
+  "license": "UNLICENSED",
+  "main": "dist/server.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katrotz/atlas.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/katrotz/atlas/issues"
+  }
+}
