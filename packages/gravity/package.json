@@ -1,0 +1,24 @@
+{
+  "name": "gravity",
+  "version": "0.1.0",
+  "description": "Infrastructure management codebase",
+  "keywords": [
+    "atlas",
+    "map",
+    "geoservices"
+  ],
+  "author": "Vyacheslav Cotruta <veaceslav.cotruta@webtrekk.com>",
+  "homepage": "https://github.com/katrotz/atlas/tree/master/packages/gravity#readme",
+  "license": "UNLICENSED",
+  "files": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katrotz/atlas.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/katrotz/atlas/issues"
+  }
+}
