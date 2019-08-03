@@ -1,0 +1,7 @@
+---
+
+- include: user.yml
+
+- include: environment.yml
+
+- include: docker.yml

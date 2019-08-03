@@ -1,0 +1,4 @@
+galaxy_roles
+log
+Pipfile.lock
+!.keep

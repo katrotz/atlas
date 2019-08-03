@@ -1,0 +1,10 @@
+---
+
+- include_role:
+    name: geerlingguy.repo-epel
+
+- include_role:
+    name: geerlingguy.pip
+
+- include_role:
+    name: geerlingguy.docker

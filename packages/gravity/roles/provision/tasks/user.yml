@@ -1,0 +1,6 @@
+---
+
+- name: ensure the provision user exists
+  user:
+    name: "{{ provision_user_name }}"
+    groups: "{{ provision_user_group }}"

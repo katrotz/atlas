@@ -1,0 +1,11 @@
+---
+
+- name: lense.yml | All roles
+  hosts: lense
+
+  roles:
+    - role: provision
+      tags: ["setup", "provision"]
+
+    - role: webserver
+      tags: ["setup", "web-server"]

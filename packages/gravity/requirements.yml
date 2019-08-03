@@ -1,0 +1,13 @@
+---
+
+- src: geerlingguy.repo-epel
+  path: galaxy_roles
+  name: geerlingguy.repo-epel
+
+- src: geerlingguy.pip
+  path: galaxy_roles
+  name: geerlingguy.pip
+
+- src: geerlingguy.docker
+  path: galaxy_roles
+  name: geerlingguy.docker

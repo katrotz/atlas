@@ -1,0 +1,24 @@
+all:
+  hosts:
+    atlas-1:
+      ansible_connection: ssh
+      ansible_port: 22
+      ansible_host: 206.81.29.196
+  children:
+    lense:
+      hosts:
+        atlas-1:
+          ansible_connection: ssh
+          ansible_port: 22
+          ansible_host: 206.81.29.196
+    nebula:
+      hosts:
+        atlas-1:
+    telescope:
+      hosts:
+        atlas-1:
+    prod:
+      children:
+        lense:
+        nebula:
+        telescope:

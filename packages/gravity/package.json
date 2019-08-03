@@ -16,7 +16,13 @@
     "url": "git+https://github.com/katrotz/atlas.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "shell": "pipenv shell",
+    "get-external-roles": "ansible-galaxy --roles-path=galaxy_roles/ --role-file=requirements.yml install",
+    "provision": "ansible-playbook playbook.yml",
+    "provision:lense": "ansible-playbook playbooks/lense.yml",
+    "provision:nebula": "ansible-playbook playbooks/nebula.yml",
+    "provision:telescope": "ansible-playbook playbooks/telescope.yml"
   },
   "bugs": {
     "url": "https://github.com/katrotz/atlas/issues"

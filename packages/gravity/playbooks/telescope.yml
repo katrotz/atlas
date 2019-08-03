@@ -1,0 +1,8 @@
+---
+
+- name: telescope.yml | All roles
+  hosts: telescope
+
+  roles:
+    - role: provision
+      tags: ["setup", "provision"]

@@ -1,0 +1,8 @@
+---
+
+- name: nebula.yml | All roles
+  hosts: nebula
+
+  roles:
+    - role: provision
+      tags: ["setup", "provision"]

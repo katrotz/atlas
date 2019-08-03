@@ -1,0 +1,7 @@
+---
+
+- import_playbook: playbooks/lense.yml
+
+- import_playbook: playbooks/nebula.yml
+
+- import_playbook: playbooks/telescope.yml
