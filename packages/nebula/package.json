@@ -7,7 +7,7 @@
     "map",
     "geoservices"
   ],
-  "author": "Vyacheslav Cotruta <veaceslav.cotruta@webtrekk.com>",
+  "author": "Vyacheslav Cotruta <katrotz@gmail.com> (https://katrotz.space)",
   "homepage": "https://github.com/katrotz/atlas/tree/master/packages/nebula#readme",
   "license": "UNLICENSED",
   "main": "dist/server.js",
