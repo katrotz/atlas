@@ -1,0 +1,10 @@
+---
+
+- include: install.yml
+  tags: install
+
+- include: image.yml
+  tags: image
+
+- include: container.yml
+  tags: container

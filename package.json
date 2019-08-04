@@ -4,7 +4,9 @@
   "description": "The Berlin's celestial orb",
   "main": "index.js",
   "scripts": {
-    "test": "lerna run test"
+    "test": "./scripts/test.sh",
+    "build": "./scripts/build.sh",
+    "publish": "./scripts/publish.sh"
   },
   "repository": {
     "type": "git",

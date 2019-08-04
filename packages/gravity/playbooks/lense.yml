@@ -7,5 +7,5 @@
     - role: provision
       tags: ["setup", "provision"]
 
-    - role: webserver
-      tags: ["setup", "web-server"]
+    - role: deploy
+      tags: ["setup", "deploy"]

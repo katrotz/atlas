@@ -1,0 +1,5 @@
+---
+
+deploy_app_name: "lense"
+deploy_app_version: "master" # TODO Pass via arguments
+deploy_image_name: "atlas/lense"

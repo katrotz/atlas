@@ -14,12 +14,14 @@
   "files": [
     "dist"
   ],
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/katrotz/atlas.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "exit 0",
+    "build": "exit 0"
   },
   "bugs": {
     "url": "https://github.com/katrotz/atlas/issues"

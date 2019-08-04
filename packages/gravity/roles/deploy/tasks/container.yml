@@ -1,0 +1,15 @@
+---
+
+- name: create the application container
+  docker_container:
+    name: "{{ deploy_app_name }}"
+    hostname: "{{ deploy_app_name }}.{{ inventory_hostname }}"
+    image: "{{ deploy_image_name }}:{{ deploy_app_version }}"
+    user: "{{ provision_user_name }}:{{ provision_user_group }}"
+    pull: yes
+    detach: yes
+    links: []
+    volumes:
+      - "/opt/{{ deploy_app_name }}:/opt/{{ deploy_app_name }}:rw"
+      - "/etc/opt/{{ deploy_app_name }}:/etc/opt/{{ deploy_app_name }}:rw"
+      - "/var/opt/{{ deploy_app_name }}:/var/opt/{{ deploy_app_name }}:rw"

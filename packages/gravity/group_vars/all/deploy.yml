@@ -1,0 +1,4 @@
+---
+
+deploy_prepare_cmd: "npm install && npm run build"
+deploy_repo_origin: "https://github.com/katrotz/atlas.git"

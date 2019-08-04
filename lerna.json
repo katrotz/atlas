@@ -2,5 +2,15 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "ignoreChanges": ["**/__tests__/**", "**/*.spec.*", "**/*.test.*", "**/*.md"],
+  "command": {
+    "version": {
+      "allowBranch": "master",
+      "message": "chore(release): publish %s"
+    },
+    "publish": {
+      "graphType": "all"
+    }
+  }
 }

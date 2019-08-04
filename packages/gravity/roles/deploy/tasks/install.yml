@@ -1,0 +1,43 @@
+---
+
+- name: create temporary directory for the artifacts
+  tempfile:
+    state: directory
+    prefix: "{{ deploy_app_name }}"
+    suffix: artifacts
+  register: artifacts_directory
+
+- name: pull the source code
+  git:
+    repo: "{{ deploy_repo_origin }}"
+    dest: "{{ artifacts_directory.path }}"
+    version: "{{ deploy_app_version }}"
+    depth: 1
+
+- name: lookup source files location
+  set_fact:
+    deploy_src_dir: "{{ artifacts_directory.path }}/packages/{{ deploy_app_name }}"
+    deploy_target_dir: "/opt/{{ deploy_app_name }}"
+
+- name: build the application
+  command: "{{ deploy_prepare_cmd }}"
+  args:
+    chdir: "{{ deploy_src_dir }}"
+
+- name: stat target directory
+  stat:
+    path: "{{ deploy_target_dir }}"
+  register: target_stat
+
+- name: stat artifacts directory
+  stat:
+    path: "{{ deploy_src_dir }}/dist"
+  register: artifacts_stat
+
+- name: purge the target dir if exists
+  command: "rm -rf {{ deploy_target_dir }}"
+  when: target_stat.stat.exists
+
+- name: move the distribution files to the target dir
+  command: "mv {{ deploy_src_dir }}/dist {{ deploy_target_dir }}"
+  when: artifacts_stat.stat.exists

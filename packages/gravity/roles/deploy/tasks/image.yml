@@ -1,0 +1,17 @@
+---
+
+- name: build the application image
+  docker_image:
+    name: "{{ deploy_image_name }}:{{ deploy_app_version }}"
+    build:
+      path: "/opt/{{ deploy_app_name }}"
+      pull: yes
+      rm: yes
+    source: build
+    state: present
+
+- name: add tag latest to the built image
+  docker_image:
+    name: "{{ deploy_image_name }}:{{ deploy_app_version }}"
+    repository: "{{ deploy_image_name }}:latest"
+    source: local
