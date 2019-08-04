@@ -3,7 +3,7 @@ import request from 'supertest';
 import { applyMiddleware, applyRoutes } from '../../utils';
 import middleware from '../../middleware';
 import errorHandlers from '../../middleware/errorHandlers';
-import routes from '../../services/health/routes';
+import routes from '../../routes/health/routes';
 import { HealthStatus } from './providers/ServiceStatusProvider';
 
 jest.mock('request-promise');

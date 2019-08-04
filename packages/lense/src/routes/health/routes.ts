@@ -11,7 +11,7 @@ export default [
       async (req: Request, res: Response) => {
         const result = await getHealthStatus();
 
-        res.status(200).send(result);
+        res.status(200).set('Content-Type', 'application/health+json').send(result);
       }
     ]
   }

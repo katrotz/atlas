@@ -1,4 +1,4 @@
-import { name as appName, version as appVersion, description as appDescription }  from './../../../package.json';
+import { name as appName, version as appVersion, description as appDescription }  from './../../../manifest.json';
 
 export enum HealthStatus {
   PASS = 'pass',
