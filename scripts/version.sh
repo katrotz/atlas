@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 
-PATH=$(npm bin):$PATH lerna version patch --yes --amend --include-merged-tags --no-changelog --tag-version-prefix='v'
+VERSION=$1
+
+PATH=$(npm bin):$PATH lerna run version -- ${VERSION}
+#PATH=$(npm bin):$PATH lerna version patch --yes --amend --include-merged-tags --no-changelog --tag-version-prefix='v'
