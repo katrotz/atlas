@@ -7,7 +7,7 @@
     "postinstall": "./scripts/bootstrap.sh",
     "test": "./scripts/test.sh",
     "build": "./scripts/build.sh",
-    "publish": "./scripts/publish.sh",
+    "version": "./scripts/version.sh",
     "deploy": "./scripts/deploy.sh"
   },
   "repository": {

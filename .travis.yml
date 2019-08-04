@@ -9,7 +9,7 @@ env:
   - NODE_ENV="development"
 after_success:
   - git remote set-url origin https://katrotz:${GITHUB_TOKEN}@github.com/katrotz/atlas.git
-  - npm publish
+  - npm version patch
 deploy:
   provider: script
   script: npm run deploy
