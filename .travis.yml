@@ -19,3 +19,10 @@ jobs:
       script: npm test
     - stage: publish
       script: npm publish
+before_install:
+  - git remote set-url origin https://katrotz:${GITHUB_TOKEN}@github.com/katrotz/atlas.git
+deploy:
+  provider: script
+  script: npm run deploy
+  skip_cleanup: true
+
