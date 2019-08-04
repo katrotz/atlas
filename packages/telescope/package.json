@@ -21,7 +21,8 @@
   },
   "scripts": {
     "test": "exit 0",
-    "build": "exit 0"
+    "build": "exit 0",
+    "version": "npm run build && git add -A dist"
   },
   "bugs": {
     "url": "https://github.com/katrotz/atlas/issues"

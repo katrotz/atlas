@@ -13,3 +13,9 @@ branches:
     - "master"
 env:
   - NODE_ENV="development"
+jobs:
+  include:
+    - stage: test
+      script: npm test
+    - stage: publish
+      script: npm publish
