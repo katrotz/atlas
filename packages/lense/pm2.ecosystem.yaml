@@ -1,0 +1,5 @@
+apps:
+  - name: lense
+    script: ./dist/server.js
+    instances: 2 # max
+    exec_mode: cluster

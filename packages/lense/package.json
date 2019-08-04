@@ -23,7 +23,7 @@
     "build": "npx typescript --project tsconfig.build.json",
     "test": "NODE_ENV=test jest --coverage --verbose",
     "dev": "tsc-watch --project tsconfig.build.json --onSuccess \"node ./dist/server.js\"",
-    "start": "npx pm2 start pm2.yaml"
+    "start": "npx pm2 start pm2.ecosystem.yaml"
   },
   "bugs": {
     "url": "https://github.com/katrotz/atlas/issues"
