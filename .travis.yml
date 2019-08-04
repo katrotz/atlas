@@ -1,26 +1,15 @@
 language: node_js
-cache:
-  directories:
-    - node_modules
-notifications:
-  email:
-    on_success: never
-    on_failure: always
 node_js:
   - "10"
+cache: npm
 branches:
   only:
     - "master"
 env:
   - NODE_ENV="development"
-jobs:
-  include:
-    - stage: test
-      script: npm test
-    - stage: publish
-      script: npm publish
-before_install:
+after_success:
   - git remote set-url origin https://katrotz:${GITHUB_TOKEN}@github.com/katrotz/atlas.git
+  - npm publish
 deploy:
   provider: script
   script: npm run deploy
