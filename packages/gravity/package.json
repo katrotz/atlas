@@ -1,6 +1,6 @@
 {
   "name": "gravity",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Infrastructure management codebase",
   "keywords": [
     "atlas",
@@ -18,7 +18,7 @@
   "scripts": {
     "test": "exit 0",
     "build": "exit 0",
-    "version": "exit 0",
+    "version": "git add -A package.json",
     "shell": "pipenv shell",
     "get-external-roles": "ansible-galaxy --roles-path=galaxy_roles/ --role-file=requirements.yml install",
     "provision": "ansible-playbook playbook.yml",
