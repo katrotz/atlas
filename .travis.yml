@@ -10,7 +10,7 @@ env:
 after_success:
   - git remote set-url origin https://katrotz:${GITHUB_TOKEN}@github.com/katrotz/atlas.git
   - npm version patch
-  - git push origin --tags
+  - git push origin ${TRAVIS_BRANCH}:${TRAVIS_BRANCH} && git push --tags
 deploy:
   provider: script
   script: npm run deploy
