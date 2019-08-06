@@ -22,7 +22,7 @@
     "postinstall": "npm run build",
     "build": "npx typescript --project tsconfig.build.json",
     "test": "NODE_ENV=test jest --coverage --verbose",
-    "version": "npm run build && git add -A dist package.json",
+    "version": "npm run build && git add -A -f dist",
     "dev": "tsc-watch --project tsconfig.build.json --onSuccess \"node ./dist/server.js\"",
     "start": "npx pm2 start pm2.ecosystem.yaml"
   },
