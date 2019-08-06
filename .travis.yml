@@ -7,10 +7,11 @@ branches:
     - "master"
 env:
   - NODE_ENV="development"
-after_success:
+before_script:
   - git remote set-url origin https://katrotz:${GITHUB_TOKEN}@github.com/katrotz/atlas.git
-  - npm version patch
-  - git push origin ${TRAVIS_BRANCH}:${TRAVIS_BRANCH} && git push --tags
+script: npm version patch && npm publish
+after_success:
+  - git push --tags
 deploy:
   provider: script
   script: npm run deploy
