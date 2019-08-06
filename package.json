@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "The Berlin's celestial orb",
   "scripts": {
-    "postinstall": "./scripts/bootstrap.sh",
+    "bootstrap": "./scripts/bootstrap.sh",
     "test": "./scripts/test.sh",
     "build": "./scripts/build.sh",
     "preversion": "./scripts/version.sh --pre",
