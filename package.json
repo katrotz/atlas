@@ -9,6 +9,7 @@
     "preversion": "./scripts/version.sh --pre",
     "version": "./scripts/version.sh ${npm_package_version}",
     "postversion": "./scripts/version.sh --post",
+    "publish": "./scripts/publish.sh",
     "deploy": "./scripts/deploy.sh"
   },
   "files": [
