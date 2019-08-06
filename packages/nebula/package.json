@@ -1,5 +1,5 @@
 {
-  "name": "nebula",
+  "name": "@atlasphere/nebula",
   "version": "0.1.4",
   "description": "Atlas Back-End Application",
   "keywords": [
@@ -14,7 +14,6 @@
   "files": [
     "dist"
   ],
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/katrotz/atlas.git"

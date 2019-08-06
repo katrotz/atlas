@@ -1,8 +1,7 @@
 {
-  "name": "atlas",
+  "name": "@atlasphere/atlas",
   "version": "0.1.4",
   "description": "The Berlin's celestial orb",
-  "main": "index.js",
   "scripts": {
     "postinstall": "./scripts/bootstrap.sh",
     "test": "./scripts/test.sh",
@@ -10,11 +9,13 @@
     "version": "./scripts/version.sh ${npm_package_version}",
     "deploy": "./scripts/deploy.sh"
   },
+  "files": [
+    "packages/*/dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/katrotz/atlas.git"
   },
-  "private": true,
   "keywords": [
     "atlas",
     "map",

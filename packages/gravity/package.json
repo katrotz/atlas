@@ -1,5 +1,5 @@
 {
-  "name": "gravity",
+  "name": "@atlasphere/gravity",
   "version": "0.1.4",
   "description": "Infrastructure management codebase",
   "keywords": [
@@ -28,6 +28,5 @@
   },
   "bugs": {
     "url": "https://github.com/katrotz/atlas/issues"
-  },
-  "private": true
+  }
 }

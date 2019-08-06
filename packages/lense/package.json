@@ -1,5 +1,5 @@
 {
-  "name": "lense",
+  "name": "@atlasphere/lense",
   "version": "0.1.4",
   "description": "Atlas Gateway Application",
   "keywords": [
@@ -14,7 +14,6 @@
   "files": [
     "dist"
   ],
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/katrotz/atlas.git"
