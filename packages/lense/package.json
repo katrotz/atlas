@@ -19,7 +19,6 @@
     "url": "git+https://github.com/katrotz/atlas.git"
   },
   "scripts": {
-    "postinstall": "npm run build",
     "build": "npx typescript --project tsconfig.build.json",
     "test": "NODE_ENV=test jest --coverage --verbose",
     "version": "npm run build && git add -A -f dist",
