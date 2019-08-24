@@ -172,9 +172,9 @@ function git_get_next_version() {
 function npm_version() {
     declare NEXT_VERSION="${1}";
 
-    npm version ${NEXT_VERSION};
+    npm version ${NEXT_VERSION} || return $?;
 }
 
 function npm_publish() {
-    npm publish --access public;
+    npm publish --access public || return $?;
 }

@@ -23,11 +23,11 @@ else
     echo "Expected the environment variable \$NPM_TOKEN to be set" && exit 1;
 fi
 
-if [[ -z "${TRAVIS_BRANCH}" ]]; then
+if [[ -n "${TRAVIS_BRANCH}" ]]; then
     CI_BRANCH_NAME="${TRAVIS_BRANCH}"
 fi;
 
-if [[ -z "${TRAVIS_PULL_REQUEST_BRANCH}" ]]; then
+if [[ -n "${TRAVIS_PULL_REQUEST_BRANCH}" ]]; then
     CI_BRANCH_NAME="${TRAVIS_PULL_REQUEST_BRANCH}"
 fi;
 
