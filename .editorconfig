@@ -3,19 +3,78 @@
 # top-most EditorConfig file
 root = true
 
+# Unix-style newlines with a newline ending every file
 [*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+# CoffeeScript - http://coffeescript.org/
+[*.coffee]
 indent_style = space
 indent_size = 2
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
 
-[*.json]
+# Handlebars.js - http://handlebarsjs.com/
+[*.hbs]
+indent_style = space
+
+# JavaScript - https://developer.mozilla.org/ja/docs/Web/JavaScript
+[*.js]
+indent_style = space
 indent_size = 2
 
-[package.json]
+# JSON - http://json.org/
+# Composer - https://getcomposer.org/doc/04-schema.md
+[{*.json,composer.lock}]
+indent_style = space
+indent_size = 4
+
+# NPM - https://docs.npmjs.com/files/package.json
+# Stylint - https://rosspatton.github.io/stylint/
+[{package.json,.stylintrc}]
+indent_style = space
 indent_size = 2
 
-[*.md]
-trim_trailing_whitespace = false
+# Python - https://www.python.org/
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Ruby - https://www.ruby-lang.org/
+# Rake - https://github.com/ruby/rake
+[{*.rb,*.rake,Rakefile}]
+indent_style = space
+indent_size = 2
+
+# Sass(SCSS) - http://sass-lang.com/
+[*.scss]
+indent_style = tab
+
+# Shell script (bash) - https://www.gnu.org/software/bash/manual/bash.html
+[*.sh]
+indent_style = space
+indent_size = 4
+
+# SQL (MySQL) - https://www.mysql.com/
+[*.sql]
+indent_style = space
+indent_size = 2
+
+# Stylus - https://learnboost.github.io/stylus/
+[*.styl]
+indent_style = space
+indent_size = 2
+
+# Smarty 2 -http://www.smarty.net/docsv2/en/
+[*.tpl]
+indent_style = tab
+
+# XHTML - http://www.w3.org/TR/xhtml1/
+[{*.xhtml,*.html}]
+indent_style = space
+indent_size = 4
+
+# YAML - http://yaml.org/
+[{*.yml,*.yaml}]
+indent_style = space
+indent_size = 2
