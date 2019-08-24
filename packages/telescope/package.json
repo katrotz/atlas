@@ -1,6 +1,6 @@
 {
   "name": "@atlasphere/telescope",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "description": "Atlas Front-End Application",
   "keywords": [
     "atlas",
@@ -21,7 +21,7 @@
   "scripts": {
     "test": "exit 0",
     "build": "mkdir -p dist && touch dist/server.js && exit 0",
-    "version": "npm run build && git add -A -f dist"
+    "version": "rm -rf dist && npm run build && git add -A -f dist"
   },
   "bugs": {
     "url": "https://github.com/katrotz/atlas/issues"

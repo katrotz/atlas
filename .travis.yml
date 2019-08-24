@@ -8,9 +8,9 @@ branches:
 env:
   - NODE_ENV="development"
 before_script:
-  - git remote set-url origin https://katrotz:${GITHUB_TOKEN}@github.com/katrotz/atlas.git
+  - npm run ci:setup
   - npm run bootstrap
-script: npm version patch && npm publish --access public && git push --tags
+script: ./scripts/release/publish.sh
 deploy:
   provider: script
   script: npm run deploy

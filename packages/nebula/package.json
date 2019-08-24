@@ -1,6 +1,6 @@
 {
   "name": "@atlasphere/nebula",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "description": "Atlas Back-End Application",
   "keywords": [
     "atlas",
@@ -21,7 +21,7 @@
   "scripts": {
     "build": "npx typescript --project tsconfig.build.json",
     "test": "NODE_ENV=test jest --coverage --verbose",
-    "version": "npm run build && git add -A -f dist",
+    "version": "rm -rf dist && npm run build && git add -A -f dist",
     "dev": "tsc-watch --project tsconfig.build.json --onSuccess \"node ./dist/server.js\"",
     "start": "npx pm2 start pm2.ecosystem.yaml"
   },
