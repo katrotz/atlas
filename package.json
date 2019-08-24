@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "The Berlin's celestial orb",
   "scripts": {
-    "ci:setup": "./scripts/ci/setup_auth.sh",
+    "ci:setup": "./scripts/ci/setup.sh",
     "bootstrap": "lerna bootstrap --hoist",
     "test": "lerna run test",
     "build": "lerna run build",
