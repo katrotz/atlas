@@ -5,6 +5,10 @@ set -e
 declare -x GIT_BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
 declare -x GIT_EVERGREEN_BRANCHES=( master release );
 
+if [[ -n "${PUBLISH_BRANCH_NAME}" ]]; then
+    GIT_BRANCH_NAME=${PUBLISH_BRANCH_NAME};
+fi;
+
 function contains() {
     declare -n local HAYSTACK_VAR_NAME="$1"
     NEEDLE=$2
