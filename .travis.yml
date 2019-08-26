@@ -6,8 +6,7 @@ branches:
   only:
     - "master"
 env:
-  - NODE_ENV="development"
-  - PUBLISH_BRANCH_NAME="$([ -n $TRAVIS_PULL_REQUEST_BRANCH ] && echo $TRAVIS_PULL_REQUEST_BRANCH || echo $TRAVIS_BRANCH)"
+  - NODE_ENV="development" PUBLISH_BRANCH_NAME="$([ -n $TRAVIS_PULL_REQUEST_BRANCH ] && echo $TRAVIS_PULL_REQUEST_BRANCH || echo $TRAVIS_BRANCH)"
 before_script:
   - npm run ci:setup
   - npm run bootstrap
