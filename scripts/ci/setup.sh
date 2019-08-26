@@ -2,7 +2,7 @@
 
 set -e
 
-declare CI_BRANCH_NAME;
+declare CI_BRANCH_NAME="$(git rev-parse --abbrev-ref HEAD)";
 
 GITHUB_USER="katrotz";
 GITHUB_REPO="atlas";
@@ -32,5 +32,3 @@ if [[ -n "${TRAVIS_PULL_REQUEST_BRANCH}" ]]; then
 fi;
 
 export PUBLISH_BRANCH_NAME="${CI_BRANCH_NAME}";
-
-echo "Running on branch ${PUBLISH_BRANCH_NAME}";
