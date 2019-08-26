@@ -2,15 +2,11 @@
 
 set -e
 
-declare -x GIT_BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+declare -x GIT_BRANCH_NAME="${PUBLISH_BRANCH_NAME}";
 declare -x GIT_EVERGREEN_BRANCHES=( master release );
 
 echo "Git branch is ${GIT_BRANCH_NAME}";
 echo "Exported publish branch name is ${PUBLISH_BRANCH_NAME}";
-
-if [[ -n "${PUBLISH_BRANCH_NAME}" ]]; then
-    GIT_BRANCH_NAME=${PUBLISH_BRANCH_NAME};
-fi;
 
 function contains() {
     declare -n local HAYSTACK_VAR_NAME="$1"

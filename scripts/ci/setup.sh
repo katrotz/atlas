@@ -2,8 +2,6 @@
 
 set -e
 
-declare CI_BRANCH_NAME="$(git rev-parse --abbrev-ref HEAD)";
-
 GITHUB_USER="katrotz";
 GITHUB_REPO="atlas";
 NPM_REGISTRY="registry.npmjs.org";
@@ -22,13 +20,3 @@ if [[ -n ${NPM_TOKEN} ]]; then
 else
     echo "Expected the environment variable \$NPM_TOKEN to be set" && exit 1;
 fi
-
-if [[ -n "${TRAVIS_BRANCH}" ]]; then
-    CI_BRANCH_NAME="${TRAVIS_BRANCH}";
-fi;
-
-if [[ -n "${TRAVIS_PULL_REQUEST_BRANCH}" ]]; then
-    CI_BRANCH_NAME="${TRAVIS_PULL_REQUEST_BRANCH}";
-fi;
-
-export PUBLISH_BRANCH_NAME="${CI_BRANCH_NAME}";
