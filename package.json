@@ -1,6 +1,6 @@
 {
   "name": "@atlasphere/atlas",
-  "version": "0.1.0",
+  "version": "0.1.7",
   "description": "The Berlin's celestial orb",
   "scripts": {
     "ci:setup": "./scripts/ci/setup.sh",
